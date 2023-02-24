@@ -41,3 +41,4 @@ vignettes/*.pdf
 inst/doc
 /doc/
 /Meta/
+# docs - don't need this if we want to make a website
