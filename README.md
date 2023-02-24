@@ -11,7 +11,9 @@ Can remove the above text
 Don’t need badges for now, but above is where you put them in if you
 want
 
-The goal of pets is to …
+The goal of pets is to provide a simple means for people to express
+their feelings about pets. At present, the package only contains one
+function: `cats()`.
 
 ## Installation
 
