@@ -16,3 +16,4 @@ test_that("logical operators work", {
   ## if alias for FALSE
   expect_equal(cats(0), "I am not a cat person.")
 })
+
