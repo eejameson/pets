@@ -1,0 +1,65 @@
+---
+output: github_document
+---
+
+<!-- README.md is generated from README.Rmd. Please edit that file -->
+
+Can remove the above text 
+
+```{r, include = FALSE}
+knitr::opts_chunk$set(
+  collapse = TRUE, # collapses all code into one large code block
+  comment = "#>", # What do you want comments to look like? You can change if you want a different aesthetic
+  fig.path = "man/figures/README-",
+  out.width = "100%" # default output width for figures
+)
+```
+
+# pets
+
+<!-- badges: start -->
+<!-- badges: end -->
+
+Don't need badges for now, but above is where you put them in if you want
+
+The goal of pets is to ...
+
+## Installation
+
+You can install the development version of pets from [GitHub](https://github.com/) with:
+
+``` r
+if(!require("devtools")) {
+  install.packages("devtools")
+}
+devtools::install_github("eejameson/pets")
+```
+
+## Example
+
+Here are two simple examples that allow you to express your feelings about cats.
+
+```{r example}
+library(pets)
+
+## if you like cats
+cats(TRUE)
+
+## if you don't like cats
+cats(FALSE)
+```
+What is special about using `README.Rmd` instead of just `README.md`? You can include R chunks like so:
+
+```{r cars}
+summary(cars)
+```
+
+You'll still need to render `README.Rmd` regularly, to keep `README.md` up-to-date. `devtools::build_readme()` is handy for this. You could also use GitHub Actions to re-render `README.Rmd` every time you push. An example workflow can be found here: <https://github.com/r-lib/actions/tree/v1/examples>.
+
+You can also embed plots, for example:
+
+```{r pressure, echo = FALSE}
+plot(pressure)
+```
+
+In that case, don't forget to commit and push the resulting figure files, so they display on GitHub and CRAN.
